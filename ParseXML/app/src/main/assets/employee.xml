@@ -1,0 +1,23 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<employees>
+    <employee id="1" title="Architect">
+        <name>Đoan Ái Nương</name>
+        <phone>01656152042</phone>
+    </employee>
+    <employee id="2" title="Software Engineering">
+        <name>Phùng Thế Vinh</name>
+        <phone>0777006619</phone>
+    </employee>
+    <employee id="3" title="BA">
+        <name>Lê Minh Duẩn</name>
+        <phone>01657272042</phone>
+    </employee>
+    <employee id="4" title="Coder">
+        <name>Đỗ Tuấn Huy</name>
+        <phone>0384136152042</phone>
+    </employee>
+    <employee id="5" title="Designer">
+        <name>Trương Văn Huy</name>
+        <phone>016482812042</phone>
+    </employee>
+</employees>
