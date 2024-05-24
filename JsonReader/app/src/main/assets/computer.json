@@ -1,0 +1,54 @@
+{
+  "Sanphams": [
+    {
+      "MaSP": "SP_001",
+      "TenSP": "Iphone 6",
+      "SoLuong": 10,
+      "DonGia": 600000,
+      "ThanhTien": 6000000,
+      "Hinh": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6-32gb-400x460.png"
+    },
+    {
+      "MaSP": "SP_002",
+      "TenSP": "Iphone 7",
+      "SoLuong": 10,
+      "DonGia": 700000,
+      "ThanhTien": 7000000,
+      "Hinh": "https://cdn.tgdd.vn/Products/Images/42/74110/iphone-7-32gb-400x460.png"
+    },
+    {
+      "MaSP": "SP_003",
+      "TenSP": "Iphone 8",
+      "SoLuong": 10,
+      "DonGia": 800000,
+      "ThanhTien": 8000000,
+      "Hinh": "https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-64gb-400x460.png"
+    },
+    {
+      "MaSP": "SP_004",
+      "TenSP": "Iphone X",
+      "SoLuong": 10,
+      "DonGia": 900000,
+      "ThanhTien": 9000000,
+      "Hinh": "https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-400x460.png"
+    },
+    {
+      "MaSP": "SP_005",
+      "TenSP": "Iphone 11",
+      "SoLuong": 10,
+      "DonGia": 1000000,
+      "ThanhTien": 10000000,
+      "Hinh": "https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-128gb-red-400x460.png"
+    },
+    {
+      "MaSP": "SP_006",
+      "TenSP": "Iphone 12",
+      "SoLuong": 10,
+      "DonGia": 1100000,
+      "ThanhTien": 11000000,
+      "Hinh": "https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-mini-128gb-400x460-1-400x460.png"
+    }
+  ],
+  "MaDM": "DM_001",
+  "TenDM": "Iphone"
+}
