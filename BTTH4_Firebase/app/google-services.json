@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "698972218099",
+    "firebase_url": "https://btth4-learningfirebase-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "btth4-learningfirebase",
+    "storage_bucket": "btth4-learningfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698972218099:android:a172daa5bbf65f99840d86",
+        "android_client_info": {
+          "package_name": "com.example.btth4_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4QQiblWuz2lsGsD4yqkfXuFPMcOrlkcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

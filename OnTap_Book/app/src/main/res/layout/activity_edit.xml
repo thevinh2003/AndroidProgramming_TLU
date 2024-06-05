@@ -6,17 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".AddActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#1390C8"
-        android:gravity="center"
-        android:text="Quản lý sinh viên"
+        android:layout_height="wrap_content"
+        android:background="#E91E63"
+        android:text="Quản lý Sách"
         android:textAlignment="center"
-        android:textColor="#E91E63"
+        android:textColor="#F3F2F2"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -30,18 +29,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mã lớp:"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="Tên sách:"
+            android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/edtmalop"
+            android:id="@+id/edtBookName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -54,12 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tên lớp:"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="Gía:        "
+            android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/edtTenLop"
+            android:id="@+id/edtBookPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -77,49 +73,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sĩ số:   "
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="Tác giả:"
+            android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/edtSiso"
+        <Spinner
+            android:id="@+id/spAuthor"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btnEditBook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Lưu lại" />
 
-        <Button
-            android:id="@+id/btnInsert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Thêm" />
-
-        <Button
-            android:id="@+id/btnUpdate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sửa" />
-
-        <Button
-            android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Xóa" />
-
-    </LinearLayout>
-
-    <ListView
-        android:id="@+id/lv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </LinearLayout>
