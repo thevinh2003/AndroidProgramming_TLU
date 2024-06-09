@@ -1,6 +1,8 @@
 package com.example.giuaky;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.giuaky.DonVi;
+import com.example.giuaky.NhanVien;
+import com.example.giuaky.R;
 
 import java.util.ArrayList;
 
@@ -36,16 +42,32 @@ public class ArrayAdapterContactItem<T> extends ArrayAdapter<T> {
         if (item instanceof DonVi) {
             DonVi myContact = (DonVi) item;
             ImageView img = convertView.findViewById(R.id.img_avatar);
-            img.setImageResource(R.drawable.avatar);
+            byte[] logo = myContact.getLogo();
+            Bitmap bitmapLogo;
+
+            if (logo != null && logo.length > 0) {
+                bitmapLogo = BitmapFactory.decodeByteArray(logo, 0, logo.length);
+            } else {
+                bitmapLogo = BitmapFactory.decodeResource(context.getResources(), R.drawable.avatar);
+            }
+            img.setImageBitmap(bitmapLogo);
             TextView tvName = convertView.findViewById(R.id.tvName);
             tvName.setText(myContact.getTenDonVi());
             TextView tvPhone = convertView.findViewById(R.id.tvPhone);
             tvPhone.setText(myContact.getDienThoai());
         }
-        if(item instanceof NhanVien){
+        if (item instanceof NhanVien) {
             NhanVien myContact = (NhanVien) item;
             ImageView img = convertView.findViewById(R.id.img_avatar);
-            img.setImageResource(R.drawable.avatar);
+            byte[] logo = myContact.getAnhDaiDien();
+            Bitmap bitmapLogo;
+
+            if (logo != null && logo.length > 0) {
+                bitmapLogo = BitmapFactory.decodeByteArray(logo, 0, logo.length);
+            } else {
+                bitmapLogo = BitmapFactory.decodeResource(context.getResources(), R.drawable.avatar);
+            }
+            img.setImageBitmap(bitmapLogo);
             TextView tvName = convertView.findViewById(R.id.tvName);
             tvName.setText(myContact.getHoTen());
             TextView tvPhone = convertView.findViewById(R.id.tvPhone);

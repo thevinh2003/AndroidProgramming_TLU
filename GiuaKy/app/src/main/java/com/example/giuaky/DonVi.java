@@ -5,12 +5,12 @@ public class DonVi {
     private String TenDonVi;
     private String Email;
     private String Website;
-    private String Logo;
+    private byte[] Logo;
     private String DiaChi;
     private String DienThoai;
     private int DonViCha;
 
-    public DonVi(int ID, String tenDonVi, String email, String website, String logo, String diaChi, String dienThoai, int donViCha) {
+    public DonVi(int ID, String tenDonVi, String email, String website, byte[] logo, String diaChi, String dienThoai, int donViCha) {
         this.ID = ID;
         TenDonVi = tenDonVi;
         Email = email;
@@ -69,11 +69,11 @@ public class DonVi {
         Website = website;
     }
 
-    public String getLogo() {
+    public byte[] getLogo() {
         return Logo;
     }
 
-    public void setLogo(String logo) {
+    public void setLogo(byte[] logo) {
         Logo = logo;
     }
 

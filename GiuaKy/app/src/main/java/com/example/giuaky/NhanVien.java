@@ -6,10 +6,10 @@ public class NhanVien {
     private String ChucVu;
     private  String Email;
     private String SoDienThoai;
-    private String AnhDaiDien;
+    private byte[] AnhDaiDien;
     private int DonViID;
 
-    public NhanVien(int ID, String hoTen, String chucVu, String email, String soDienThoai, String anhDaiDien, int donViID) {
+    public NhanVien(int ID, String hoTen, String chucVu, String email, String soDienThoai, byte[] anhDaiDien, int donViID) {
         this.ID = ID;
         HoTen = hoTen;
         ChucVu = chucVu;
@@ -59,11 +59,11 @@ public class NhanVien {
         SoDienThoai = soDienThoai;
     }
 
-    public String getAnhDaiDien() {
+    public byte[] getAnhDaiDien() {
         return AnhDaiDien;
     }
 
-    public void setAnhDaiDien(String anhDaiDien) {
+    public void setAnhDaiDien(byte[] anhDaiDien) {
         AnhDaiDien = anhDaiDien;
     }
 
